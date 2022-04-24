@@ -24,14 +24,19 @@ const gradientText = {
 
 const MainContent = () => (
   <Box maxWidth="500px">
-    <Heading fontWeight="bold" fontSize={['5xl', '6xl']} lineHeight={1.1}>
+    <Heading
+      fontWeight="bold"
+      fontSize={['5xl', '6xl']}
+      lineHeight={1.1}
+      as="h1"
+    >
       Quickly{' '}
       <Text as="span" {...gradientText}>
         manage all the links
       </Text>{' '}
       on a web page
     </Heading>
-    <Text mt={6} fontSize={['md', 'lg']}>
+    <Text mt={6} fontSize={['md', 'lg']} as="h2">
       A free and{' '}
       <Link color="blurple.300" href={Links.githubRepo}>
         open-source
